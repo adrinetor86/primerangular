@@ -19,13 +19,22 @@ import {Component} from '@angular/core';
 export class PrimerComponent {
   //AQUI ES DONDE SE DECLARAN LAS VARIABLES
 
-  public titulo:string;
-  public year:number;
+   titulo:string;
+   year:number;
 
+   cambiarMensaje(){
+    console.log(this.titulo);
+    this.titulo="y mañana jueves!!!"
+     console.log("Mensaje cambiado "+this.titulo);
+   }
+
+   metodoString():string{
+
+     return "El año es: " + this.year;
+   }
   constructor() {
-    this.titulo="Hoy es martes";
+    this.titulo="Hoy es miercoles";
     this.year=20;
-
   }
 
 }

@@ -1,0 +1,27 @@
+<div>
+  <h1>Directivas Angular 2</h1>
+
+  @if(sports.length < 5){
+    <h2>Es mayor que 5 aaa</h2>
+  }@else{
+    <h2>Es menor que 5 aa</h2>
+  }
+
+  @for(num of numeros;track num;let i=$index){
+    <p>Index:{{i}}, Numero:{{num}}</p>
+  }
+
+  <ul>
+    @for (num of numeros;track num){
+      @if(num % 2==0){
+        <li class="par">{{num}}</li>
+      }@else{
+        <li class="impar">{{num}}</li>
+      }
+
+    }
+  </ul>
+
+  <h2>El primer deporte es: {{sports[0]}}</h2>
+
+</div>
