@@ -1,0 +1,37 @@
+<div>
+  <h1 class="text-primary">TABLA MULTIPLICAR</h1>
+  <form #ngForm="ngForm">
+    <label for="">Numero</label>
+    <input type="number"
+           name="cajaNumero"
+           #cajaNumero
+          >
+    <button (click)="generarTabla()">Generar Tabla</button>
+  </form>
+
+  @if(arrOperacion.length){
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>Operacion</th>
+      <th>Resultado</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    @for(operacion of arrOperacion; track operacion ; let i=$index){
+      <tr>
+        <td>{{i+1}}*{{num}}</td>
+        <td>{{operacion}}</td>
+      </tr>
+    }
+
+<!--    <tr *ngFor="let operacion of arrOperacion;let i=index">-->
+<!--      <td>{{i+1}}*{{num}}</td>-->
+<!--      <td>{{operacion}}</td>-->
+<!--    </tr>-->
+
+    </tbody>
+  </table>
+  }
+</div>

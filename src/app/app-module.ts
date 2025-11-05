@@ -10,7 +10,7 @@ import { FormularioBindingComponent } from './formulariobinding/formulario.compo
 import { SumarnumerosComponent } from './sumarnumeros/sumarnumeros.component';
 import { Prueba } from './components/prueba/prueba';
 import { Prueba2Component } from './components/prueba2.component/prueba2.component';
-
+import { TablamultiplicarComponent } from './tablamultiplicar/tablamultiplicar.component';
 @NgModule({
   declarations: [
     App,
@@ -21,7 +21,8 @@ import { Prueba2Component } from './components/prueba2.component/prueba2.compone
     FormularioBindingComponent,
     SumarnumerosComponent,
     Prueba,
-    Prueba2Component
+    Prueba2Component,
+    TablamultiplicarComponent
   ],
   imports: [
     BrowserModule,
